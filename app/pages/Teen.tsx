@@ -1,6 +1,6 @@
 import React from 'react'
 import styles, { layout } from "../../styles";
-import { bookshelf, janbooklist } from '@/assets';
+import { bookshelf } from '@/assets';
 import Image from 'next/image';
 import { IoBookOutline } from "react-icons/io5";
 import { CalendarDays } from "lucide-react"

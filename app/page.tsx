@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero'
 import styles from "../styles";
 import Cards from './pages/Cards'
-import Downloadables from './pages/Downloadables'
 import Events from '@/components/Events'
 import Teen from './pages/Teen'
 import Community from './pages/Community'
@@ -22,7 +21,6 @@ export default function Home() {
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Downloadables/>
       </div>
       </div>
       <div className={`bg-secondary p-12 ${styles.paddingX} ${styles.flexCenter}`}>

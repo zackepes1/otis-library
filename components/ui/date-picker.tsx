@@ -83,7 +83,7 @@ export function DatePicker({ children, ...props }: DatePickerProps) {
           </PopoverTrigger>
         </div>
         <PopoverContent className="w-auto p-3">
-          <Calendar {...calendarProps} />
+          {/* <Calendar {...calendarProps} /> */}
         </PopoverContent>
       </Popover>
     </div>
