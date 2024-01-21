@@ -21,9 +21,9 @@ const Teen = () => {
   return (
     <div>
 
-        <div className="flex flex-row m-auto justify-center items-center">
+        <div className="flex  flex-col lg:flex-row m-auto justify-center items-center p-6">
           <div className="relative max-w-1/2">
-            <Image src={bookshelf} alt="January Books"  className="shadow-lg shadow-black/30 " width={1000} height={1000}/>
+            <Image src={bookshelf} alt="January Books"  className="shadow-lg shadow-black/30 w-auto " />
             <div className="text-secondary flex flex-row m-auto justify-center items-center absolute bottom-40 right-[110px]">
             <HoverCard>
       <HoverCardTrigger asChild>

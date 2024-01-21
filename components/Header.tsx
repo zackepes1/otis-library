@@ -38,7 +38,7 @@ const Header = () => {
   <SheetTrigger>
   <IoMenuOutline className="text-5xl absolute top-6 left-6 text-secondary  flex xl:hidden"/>
   </SheetTrigger>
-  <SheetContent side="right" className="w-3/4 max-w-7xl bg-white/20 backdrop-blur-lg">
+  <SheetContent side="right" className="w-[90%] max-w-7xl bg-white/20 backdrop-blur-lg">
     <SheetHeader>
       <SheetDescription>
       {nav.map((link) => (
@@ -54,8 +54,8 @@ const Header = () => {
                 </div>
                 {link.sublinks.map((mysublinks) =>
                 (
-                      <div key={mysublinks.name} className="flex flex-row ">
-                        <h1 className={`${heading === link.name ? "flex" : "hidden"} font-poppins mx-10 cursor-pointer text-secondary justify-start text-start items-start font-semibold text-lg pb-5 h-full w-full hover:text-blue-500 transition duration-700 ease-in-out`}>
+                      <div key={mysublinks.name} className="flex flex-row justify-start text-start ">
+                        <h1 className={`${heading === link.name ? "flex" : "hidden"} font-poppins  cursor-pointer text-secondary  font-semibold text-base pb-5 h-full w-full hover:text-blue-500 transition duration-700 ease-in-out`}>
                         <SheetTrigger>
                           <Link className="w-full" href={mysublinks.link}>{mysublinks.name}</Link>
                           </SheetTrigger>

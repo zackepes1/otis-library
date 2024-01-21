@@ -23,7 +23,7 @@ export default function Home() {
       <div className={`${styles.boxWidth}`}>
       </div>
       </div>
-      <div className={`bg-secondary p-12 ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`bg-secondary lg:p-12 ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Events/>
         <Teen/>

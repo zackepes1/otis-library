@@ -36,7 +36,7 @@ const Events = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition= {{duration: 1}}
-        className={`${styles.paragraph} font-semibold leading-10 mt-2`}>
+        className={`${styles.paragraph} font-semibold lg:leading-10 mt-2`}>
       Here&apos;s a sneak peek at the amazing events waiting for you:
       </motion.p>
     </div>
@@ -48,19 +48,19 @@ const Events = () => {
               whileInView={{ opacity: 1, x: 0, }}
               transition={{ duration: .7 }}
               viewport={{ once: true }}
-              className="grid grid-cols-2 relative justify-items-center place-items-center bg-white shadow-md rounded-xl h-full font-poppins  group p-5">
+              className="grid grid-cols-1 lg:grid-cols-2 relative justify-items-center place-items-center bg-white shadow-md rounded-xl h-full font-poppins  group p-5">
                 <Image alt={programs.title} className="w-[80%] h-[80%] rounded-xl object-contain " src={programs.img}/>
                   <a className="rounded-full" href={programs.link}>
                     <p className="text-2xl p-2 text-center font-oswald font-semibold group-hover:text-blue-500 transition-all duration-700 text-otisBlue">{programs.title}</p>
                   </a>
-                  <Badge className="absolute top-2 left-2 bg-primary">{programs.format}</Badge> 
+                  <Badge className="absolute top-2 left-2 bg-primary -mt-2">{programs.format}</Badge> 
    
         <ul>
          <li className="text-center col-start-2">{programs.date}</li>
-        <li className="text-center">{programs.time}</li>
+        <li className="text-center p-4">{programs.time}</li>
          </ul>
          <Link href={programs.invite}>
-         <FcGoogle className="text-blue-500 text-2xl absolute bottom-2 right-10" />
+         <FcGoogle className="text-blue-500 text-2xl absolute bottom-2 right-10 " />
          </Link>
          <TooltipProvider>
           <Tooltip>

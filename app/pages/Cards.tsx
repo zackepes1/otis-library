@@ -25,7 +25,7 @@ const Cards = () => {
      whileInView={{ opacity: 1, x: 0, }}
      transition={{ duration: .7 }}
      viewport={{ once: true }}
-     className="grid grid-cols-1 lg:grid-cols-4 justify-center gap-4 p-24">
+     className="grid grid-cols-1 lg:grid-cols-4 justify-center gap-4 lg:p-24">
     {homeCards.map ((cards) => (
         <div key={cards.id}>
 
@@ -40,7 +40,7 @@ const Cards = () => {
 
   <Link href={cards.link}>
     <p className="text-otisBlue font-poppins text-base">{cards.content}</p>
-    <IoOpenOutline className="text-2xl text-blue-500 inline ml-2 absolute bottom-2 right-2 origin-center hover:text-4xl transition-all duration-200 ease-in" />
+    <IoOpenOutline className=" lg:text-2xl text-blue-500 inline ml-2 absolute bottom-2 right-2 origin-center hover:text-4xl transition-all duration-200 ease-in" />
     </Link>
   </CardContent>
 </Card>
